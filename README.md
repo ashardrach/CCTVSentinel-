@@ -1,53 +1,74 @@
 # CCTV Sentinel 🎥
 
-A professional network camera discovery and monitoring tool 
-built in Python. For authorized use only.
+A professional CCTV network monitoring and management system
+built in Python. For authorized use on networks you own only.
 
-## Features — Phase 1
-- Automatic network subnet detection
-- Multi-threaded scanning (50 simultaneous threads)
-- CCTV port detection (RTSP, HTTP, Hikvision, Dahua)
-- Device type identification
-- Hostname resolution
+## Features
+
+### Phase 1 — Network Discovery
+- Automatic subnet detection
+- Multi-threaded network scanning (50 threads)
+- CCTV device detection (IP cameras, NVR, DVR)
+- Port identification (RTSP, HTTP, Hikvision, Dahua)
 - RTSP stream URL generation
-- Web interface URL detection
-- Save results to JSON and CSV
-- Color-coded terminal output
+- Save scan results to JSON and CSV
 
-## Detected Device Types
-- IP Cameras
-- NVR (Network Video Recorder)
-- DVR (Digital Video Recorder)
-- Hikvision devices
-- Dahua devices
-- General network devices
+### Phase 2 — Uptime Monitoring
+- Monitor cameras every 30 seconds
+- Detect online/offline status changes
+- Desktop popup notifications
+- Uptime percentage tracking
+- Event log with timestamps
+- Automatic report generation
 
-## CCTV Ports Scanned
-- Port 554  — RTSP video streaming
-- Port 80   — HTTP web interface
-- Port 443  — HTTPS web interface
-- Port 8080 — Alternative HTTP
-- Port 9000 — Hikvision SDK
-- Port 37777 — Dahua proprietary
-- Port 34567 — DVR systems
+### Phase 3 — GUI Dashboard
+- Professional dark theme desktop application
+- Network scan button
+- Add/Remove cameras manually
+- Live color-coded status table
+- Real-time event log
+- Save report button
+
+### Phase 4 — Professional Features
+- SQLite database (permanent storage)
+- Camera location tracking
+- Full event history and audit trail
+- Email alerts via Gmail SMTP
+- Telegram bot instant alerts
+- Scheduled automatic scanning
+- SHA256 hashed login system
+- Unified main menu
+
+## Files
+- main.py      — entry point with login and main menu
+- sentinel.py  — network discovery scanner
+- monitor.py   — terminal uptime monitor
+- gui.py       — GUI dashboard
+- database.py  — SQLite database operations
+- alerts.py    — email and Telegram alerts
+- scheduler.py — scheduled scanning
+- auth.py      — login authentication system
+
+## Requirements
+pip install python-nmap colorama requests plyer schedule python-telegram-bot
+
+Also install Nmap from nmap.org
+
+## How to Run
+python main.py
 
 ## Legal Warning
 This tool is for authorized use only. Only scan networks
 and systems you own or have explicit written permission
-to scan. Unauthorized scanning is illegal.
+to monitor. Unauthorized scanning is illegal.
 
-## How to Run
-1. Install requirements:
-   pip install python-nmap colorama requests
-2. Install Nmap from nmap.org
-3. Run:
-   python sentinel.py
-
-## Coming Soon
-- Phase 2: Camera uptime monitoring
-- Phase 3: GUI dashboard
-- Phase 4: Alerts and scheduling
+## Real World Use Cases
+- CCTV network audits for small businesses
+- Camera uptime monitoring services
+- Network inventory for security installers
+- Automated health reporting for clients
 
 ## Built By
-ashardrach — cybersecurity student building 
-professional network tools.
+ashardrach — cybersecurity student building
+professional network security tools.
+GitHub: github.com/ashardrach
