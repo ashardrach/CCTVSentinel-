@@ -1,0 +1,13 @@
+[
+  {
+    "ip": "192.168.1.1",
+    "hostname": "attwifimanager.routerlogin.net",
+    "device_type": "Network Device",
+    "open_ports": [
+      80
+    ],
+    "rtsp_url": "N/A",
+    "web_url": "http://192.168.1.1:80",
+    "discovered_at": "2026-05-16 19:29:39.996176"
+  }
+]

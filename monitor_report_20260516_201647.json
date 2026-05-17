@@ -1,0 +1,25 @@
+{
+  "camera_status": [
+    {
+      "name": "Router",
+      "ip": "192.168.1.1",
+      "port": 80,
+      "status": "online",
+      "last_seen": "20:11:16",
+      "uptime_count": 1,
+      "downtime_count": 0,
+      "total_checks": 1
+    },
+    {
+      "name": "FakeCamera",
+      "ip": "192.168.1.99",
+      "port": 80,
+      "status": "offline",
+      "last_seen": "Never",
+      "uptime_count": 0,
+      "downtime_count": 1,
+      "total_checks": 1
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,15 @@
+{
+  "camera_status": [
+    {
+      "name": "Router",
+      "ip": "192.168.1.1",
+      "port": 80,
+      "status": "online",
+      "last_seen": "19:53:20",
+      "uptime_count": 2,
+      "downtime_count": 0,
+      "total_checks": 2
+    }
+  ],
+  "events": []
+}

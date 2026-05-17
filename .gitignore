@@ -1,3 +1,5 @@
-*.json
 *.csv
+*.db
+auth.json
+alerts_config.json
 images/
